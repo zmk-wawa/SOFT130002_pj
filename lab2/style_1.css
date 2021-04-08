@@ -1,0 +1,114 @@
+body {
+    font-family:"Microsoft YaHei";
+    margin: 0;
+    padding: 0;
+}
+.title {
+    font-size: 30px;
+    font-weight: bold;
+}
+.littleTitle {
+    font-size: 20px;
+    font-style: italic;
+}
+.navigation {
+
+}
+a:hover {
+    background: yellow;
+}
+.atype1 {
+    float: right;
+    width:35px;/*设置元素宽为80px*/
+    height:28px;/*设置高度为28px*/
+    line-height:38px;/*设置行距为10px，让文字在每行的中间位置*/
+    color:black;
+    margin:5px 10px;
+    font-size:17px;/*用12号字*/
+    display:block;/*这个比较关键，因为a本身就是联级元素，本身不具有宽高，用这个把它变成块级元素，这样前面设置的宽和高就能起作用了*/
+    text-align:center;/*让文本居中*/
+    text-decoration:none; /*去掉下划线*/
+}
+/* 设置容器大小*/
+#container1 {
+    position: relative;
+    width: 1250px;
+    height: 400px;
+}
+/* 设置input位置 */
+#container1 input {
+    position: absolute;
+    bottom: 10px;
+    z-index: 10;
+}
+/* 设置input位置 */
+#pic1 {
+    left: 48%;
+}
+#pic2 {
+    left: 50%;
+}
+#pic3 {
+    left: 52%;
+}
+/* 设置图片大小，透明度为0 */
+.wrap img {
+    position: absolute;
+    width: 100%;
+    height:100%;
+    left: 0;
+    opacity: 0;
+    z-index: 0;
+}
+/* 默认选中第一张，根据选中的input，展示对应的图片 */
+#pic1:checked ~ .wrap img:nth-of-type(1),
+#pic2:checked ~ .wrap img:nth-of-type(2),
+#pic3:checked ~ .wrap img:nth-of-type(3) {
+    opacity: 1;
+}
+/*并列三个图片*/
+#container2 {
+    position: relative;
+    width: 1250px;
+    height: 600px;
+    display: inline;
+}
+#container2 img {
+    height: 200px;
+    width: 400px;
+    margin: 5px;
+}
+#container2 table {
+    width: 1250px;
+    text-align: center;
+    text-overflow: ellipsis;
+    table-layout:fixed;
+    overflow: hidden;
+}
+td {
+    padding-top: 0;
+    width: 400px;
+    vertical-align: text-top;  //文字居上
+}
+.atype2 {
+    font: bold 17px "Microsoft YaHei";
+    width: 131px;
+    height: 40px;
+    line-height: 38px;
+    color: goldenrod;
+    margin: 5px 138px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background: black;
+    border-radius: 20px;
+    background:url("resources/img/341.jpg");
+}
+
+#footer {
+    background: black;
+    color: white;
+    font: bold 16px/50px Arial;
+    text-align: center;
+    height: 50px;
+}
