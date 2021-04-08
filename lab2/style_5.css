@@ -1,0 +1,135 @@
+#container1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: goldenrod;
+    height: 50px;
+    width: 1280px;
+}
+a:hover {
+    background: whitesmoke;
+}
+.atype1 {
+    float: right;
+    font: bold 17px "Microsoft YaHei";
+    width:50px;/*设置元素宽为80px*/
+    height:40px;/*设置高度为28px*/
+    line-height:38px;/*设置行距为10px，让文字在每行的中间位置*/
+    color:black;
+    margin:5px 10px;
+    display:block;
+    text-align:center;/*让文本居中*/
+    text-decoration:none; /*去掉下划线*/
+}
+#container2 {
+    position: absolute;
+    top: 100px;
+    left: 40px;
+    width: 200px;
+    height: 500px;
+}
+#span1 {
+    position: relative;
+    font: normal 60px "Microsoft YaHei";
+    color: whitesmoke;
+    margin-top: 30px;
+    margin-left: 34px;
+    letter-spacing: 16px;
+}
+#container3 {
+    position: absolute;
+    top: 180px;
+    right: 400px;
+    width: 600px;
+    height: 500px;
+}
+.input3 {
+    position: relative;
+    width: 395px;
+    height: 40px;
+    color: silver;
+    font: normal 25px "Microsoft YaHei";
+    margin-left: 30px;
+    margin-top: 20px;
+    border: 3px solid goldenrod;
+}
+.input2 {
+    font: bolder 25px "Microsoft YaHei";
+    background: url(resources/img/button2.jpg);
+    color: gold;
+    text-align: center;
+    width: 97px;
+    line-height: 33px;
+    height: 42px;
+    cursor: pointer;
+    margin-left: 478px;
+    border: 3px solid whitesmoke;
+    position: absolute;
+    top: 25px;
+    letter-spacing: 2px;
+}
+.select1 {
+    position: relative;
+    left: 311px;
+    top: 15px;
+    width: 59px;
+    height: 23px;
+    cursor: pointer;
+}
+#container4 {
+    position: absolute;
+    top: 310px;
+    width: 1200px;
+    height: 400px;
+}
+#img2 {
+    position: relative;
+    left: 200px;
+    height: 340px;
+    width: 337px;
+}
+#img3 {
+    position: relative;
+    left: 200px;
+    height: 270px;
+    width: 220px;
+    top: 20px;
+    border: 2px solid goldenrod;
+    border-radius: 20px;
+}
+ul>li {
+    position: relative;
+    color: whitesmoke;
+    width: 300px;
+    left: 500px;
+    top: -270px;
+}
+ul {
+    height: 0px;
+}
+#span2 {
+    width: 200px;
+    height: 50px;
+    display: block;
+    position: relative;
+    left: 438px;
+    top: 70px;
+}
+
+
+a:hover {
+    background: whitesmoke;
+}
+.atype2 {
+    text-decoration: none;
+    background: whitesmoke;
+    font: bold 17px "Microsoft YaHei";
+    width: 70px;
+    border: 2px solid goldenrod;
+    border-radius: 20px;
+    margin: 5px 8px;
+    text-align: center;
+    line-height: 50px;
+    padding: 3px;
+    cursor: pointer;
+}
