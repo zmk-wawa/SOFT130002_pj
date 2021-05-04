@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <link rel="stylesheet" href="style_4.css">
+</head>
+<body background="resources/img/黑色图片3.jpg">
+<div id="track"></div>
+<div id="container1">
+    <p id="p1">REGISTER</p>
+    <p id="p2">Please create a new username and password!</p>
+    <a href="lab2_1.html" ><img src="resources/img/黑色叉号.jpg" alt="加载中" id="img1"></a>
+    <hr>
+</div>
+<div id="container2">
+    <!表单输入>
+    <table >
+        <tr>
+            <td class="firsttd">用户名：</td>
+            <td>
+                <input type="text" value="昵称" class="input3" id="isUsername">
+            </td>
+        </tr>
+        <tr>
+            <td class="firsttd">密码：</td>
+            <td>
+                <input type="password" value="····" class="input3" id="isPassword">
+            </td>
+        </tr>
+        <tr>
+            <td class="firsttd"> 确认密码：</td>
+            <td>
+                <input type="password" value="····" class="input3" id="isSure">
+            </td>
+        </tr>
+        <tr>
+            <td class="firsttd">电子邮箱：</td>
+            <td>
+                <input type="text" class="input3" value="××@qq.com" id="isEmail">
+            </td>
+        </tr>
+    </table>
+    <br/><br/>
+    <!点击注册 跳转至登录界面>
+        <input type="submit" value="REGISTER" class="input2" onmouseover="this.style.backgroundPosition='center right '"
+               onmouseout="this.style.backgroundPosition='top right'" id="isAccount" onclick="isJump()">
+</div>
+<script type="text/javascript" src="2_4.js"></script>
+<script type="text/javascript" src="track.js"></script>
+</body>
+</html>

@@ -1,0 +1,191 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+#container1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: goldenrod;
+    height: 50px;
+    width: 1280px;
+}
+a:hover {
+    background: whitesmoke;
+}
+.atype1 {
+    float: right;
+    font: bold 17px "Microsoft YaHei";
+    width:50px;/*设置元素宽为80px*/
+    height:40px;/*设置高度为28px*/
+    line-height:38px;/*设置行距为10px，让文字在每行的中间位置*/
+    color:black;
+    margin:5px 10px;
+    display:block;
+    text-align:center;/*让文本居中*/
+    text-decoration:none; /*去掉下划线*/
+}
+#container2 {
+    position: absolute;
+    float: left;
+    top: 50px;
+    width: 100px;
+    height: 550px;
+    background: #792174;
+}
+#img1 {
+    position: relative;
+    top: 21px;
+    left: 6px;
+    height: 80px;
+    width: 80px;
+    display: block;
+    border-radius: 20px;
+    box-shadow: rgba(0,0,0,0.3) 2px 3px 2px;
+}
+#p1 {
+    top: 49px;
+    margin: 0;
+    position: relative;
+    text-align: left;
+    font: bold 16px "Microsoft YaHei";
+    color: black;
+}
+#p2 {
+    top: 55px;
+    margin: 0;
+    position: relative;
+    text-align: center;
+    font: normal 15px "Microsoft YaHei";
+    color: whitesmoke;
+}
+#p3 {
+    top: 92px;
+    margin: 0;
+    position: relative;
+    text-align: left;
+    font: bold 16px "Microsoft YaHei";
+    color: black;
+}
+#p4 {
+    top: 99px;
+    margin: 0;
+    position: relative;
+    text-align: center;
+    font: normal 15px "Microsoft YaHei";
+    color: whitesmoke;
+}
+#container3 {
+    position: absolute;
+    top: 50px;
+    left: 150px;
+    margin: 0;
+    height: 100px;
+    width: 700px;
+}
+#p5 {
+    top: 12px;
+    margin: 0;
+    position: relative;
+    left: 51px;
+    font: bold 27px "Microsoft YaHei";
+    color: wheat;
+    letter-spacing: 2px;
+}
+#span1 {
+    position: relative;
+    font: normal 60px "Microsoft YaHei";
+    color: whitesmoke;
+    margin-top: 30px;
+    margin-left: 34px;
+    letter-spacing: 16px;
+}
+.input1 {
+    position: relative;
+    width: 381px;
+    height: 35px;
+    color: silver;
+    font: normal 25px "Microsoft YaHei";
+    margin-left: 69px;
+    margin-top: 22px;
+    border: 3px solid goldenrod;
+}
+.input2 {
+    font: bolder 20px "Microsoft YaHei";
+    background: url(resources/img/button2.jpg);
+    color: gold;
+    text-align: center;
+    width: 73px;
+    line-height: 16px;
+    height: 35px;
+    cursor: pointer;
+    margin-left: 494px;
+    border: 3px solid whitesmoke;
+    position: absolute;
+    top: 62px;
+    letter-spacing: 2px;
+}
+#container4 {
+    position: absolute;
+    top: 200px;
+    left: 120px;
+    width: 997px;
+    height: 400px;
+    text-align: center;
+    overflow:auto;
+    text-overflow: ellipsis;
+    table-layout:fixed;
+}
+.td2 {
+    width: 200px;
+    height: 200px;
+}
+.td3 {
+    width: 150px;
+}
+.td1 {
+    color: whitesmoke;
+    width: 600px;
+    height: 100px;
+    vertical-align: center;
+}
+.tr1 {
+    text-align: center;
+    padding-top: 0;
+    color: whitesmoke;
+}
+
+.atype2 {
+    font: bold 17px "Microsoft YaHei";
+    width: 70px;
+    height: 40px;
+    line-height: 38px;
+    color: goldenrod;
+    margin: 5px 40px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background: whitesmoke;
+    border-radius: 20px;
+    background:url("resources/img/341.jpg");
+}
+.imgSize {
+    height: 140px;
+    width: 190px;
+}
+
+/*足迹栏*/
+#track {
+    position: absolute;
+    top: 0px;
+    text-align: left;
+    z-index: 1000;
+    width: 1263px;
+    font: bold 16px/50px Arial;
+    height: 38px;
+}
+
+.aS {
+    color: black;
+    text-decoration: none;
+}

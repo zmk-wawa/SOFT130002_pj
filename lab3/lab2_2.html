@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商品展示页</title>
+    <link rel="stylesheet" href="style_2.css">
+</head>
+<body background="resources/img/白色磨砂背景.jpg">
+    <div id="container1">
+        <span class="title">Art Store </span>
+        <span class="littleTitle" >
+            <a class="atype1" href="lab2_3.html"> 登陆</a>
+            or
+            <a class="atype1" href="lab2_4.html">注册</a>
+        </span>
+        <span>
+            <a href="lab2_3.html" style="cursor: pointer"><img src="resources/img/未登录图标.jpg" alt="错误图片"></a>
+        </span>
+    </div>
+    <div id="track"></div>
+    <hr>
+    <div id="container2">
+        <p id="p1">The Girl With The Pearl Earring</p>
+        <a href="lab2_5.html" class="atype1" id="p2">Artist: Johannes Vermeer</a>
+    </div>
+    <br/><br/>
+    <hr>
+<div id="container3">
+    <div class="box" id="box">
+        <div id="smallBox" class="small ">
+            <img src="resources/img/425.jpg" width="350px">
+            <div id="mask" class="mask"></div>
+        </div>
+        <div id="bigBox" class="big">
+            <img src="resources/img/425.jpg" alt="" id="bigPic">
+        </div>
+    </div>
+    <section id="sec">
+        <p class="p4 p3">painted 1665</p>
+        <p>Name:The Girl With The Pearl Earring </p>
+        <p>Dimensions: 44.5 cm × 39 cm</p>
+        <p>Medium: Oil on canvas</p>
+        <p>Subject: Portrait</p>
+        <p>Location:Museum of Mauris,The Hague,Netherlands</p>
+        <p class="p3">HEAT:599</p>
+        <hr>
+        <p class="p3">Price:100,000,000 USD</p>
+        <form action="lab2_6.html" >
+            <input type="submit" value="ADD TO WISH LIST" onmouseover="this.style.backgroundPosition='left -40px'"
+                   onmouseout="this.style.backgroundPosition='left top'" id="input1" onclick="display_alert()">
+        </form>
+        <br/>
+        <form action="http://www.w3school.com.cn" >
+            <input type="submit" value="ADD TO SHOPPING CART" onmouseover="this.style.backgroundPosition='left -40px'"
+                   onmouseout="this.style.backgroundPosition='left top'" id="input2" onclick="display_alert()">
+        </form>
+        <br/>
+        <a href="#" id="typea3">See more goods...</a>
+    </section>
+</div>
+    <script type="text/javascript" src="练习2.js"></script>
+    <script type="text/javascript" src="track.js"></script>
+</body>
+</html>
