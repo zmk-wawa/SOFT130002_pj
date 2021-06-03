@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <link rel="stylesheet" href="style_3.css">
+</head>
+<body background="resources/img/黑色图片3.jpg">
+    <div id="track"></div>
+    <div id="container1">
+        <p id="p1">WELCOME</p>
+        <p id="p2">Please enter your username and password </p>
+        <a href="lab2_1.html" ><img src="resources/img/黑色叉号.jpg" alt="加载中" id="img1"></a>
+    </div>
+    <div id="container2">
+        <!以下是用户名与密码输入>
+        <form action="#">
+            <label>
+                <input type="text" name="username" class="input3" id="isusername" value="用户名">
+                <span class="empty" id="userName">*用户名不能为空！</span>
+            </label>
+            <br/><br/>
+            <label>
+                <input type="password" name="password" class="input3" id="ispassword" value="......">
+                <span class="empty" id="passWord">*密码不能为空！</span>
+            </label>
+            <span class="empty" id="both">*账号和密码不能为空！</span>
+        </form>
+        <input type="submit" value="LOG IN" class="input2" onmouseover="this.style.backgroundPosition='center right '"
+                   onmouseout="this.style.backgroundPosition='top right'"onclick="isEmpty()" id="logInClick">
+            <br/>
+        <form action="lab2_4.html">
+            <input type="submit" value="CREAT ACCOUNT" class="input2" onmouseover="this.style.backgroundPosition='center ' +
+             'right '" onmouseout="this.style.backgroundPosition='bottom right'" id="account" >
+        </form>
+    </div>
+    <div id="container3">
+        <img src="resources/img/金色蝴蝶.jpg" alt="加载中" id="img3">
+    </div>
+    <script type="text/javascript" src="2_3.js"></script>
+<script type="text/javascript" src="track.js"></script>
+</body>
+</html>
