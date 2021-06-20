@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+#container1 {
+    position: absolute;
+    height: 100px;
+    width: 1404px;
+    text-align: center;
+}
+#p1 {
+    font: bold 45px "Microsoft YaHei";
+    color: aliceblue;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    margin-top: 25px;
+}
+#p2 {
+    position: relative;
+    font: bold 30px "Microsoft YaHei";
+    color: gold;
+    letter-spacing: 1px;
+    margin: 10px;
+}
+#img1 {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    float: right;
+    z-index: 1001;
+    top: 10px;
+    right: 5px;
+}
+#container2 {
+    position: absolute;
+    top: 180px;
+    color: whitesmoke;
+}
+.firsttd {
+    position: relative;
+    font: normal 20px "Microsoft YaHei";
+    margin-left: 340px;
+    float: left;
+}
+.input3 {
+    position: relative;
+    width: 400px;
+    height: 40px;
+    color: silver;
+    font: normal 25px "Microsoft YaHei";
+    border: 3px solid goldenrod;
+}
+
+.input2 {
+    font: bolder 30px "Microsoft YaHei";
+    background: url("resources/img/button2.jpg");
+    color: gold;
+    text-align: center;
+    width: 300px;
+    line-height: 40px;
+    height: 50px;
+    cursor:pointer;
+    margin-left: 480px;
+    border: 3px solid whitesmoke;
+}
+
+/*用户名密码确认密码判断*/
+#isUsername { }
+#isPassword { }
+#isSure { }
+#isEmail { }
+#isAccount { }
+
+/*足迹栏*/
+#track {
+    position: absolute;
+    top: -5px;
+    text-align: left;
+    z-index: 1000;
+    width: 1263px;
+    background: black;
+    font: bold 16px/50px Arial;
+    height: 38px;
+    border: 1px solid black;
+}
+
+.aS {
+    color: goldenrod;
+    text-decoration: none;
+}

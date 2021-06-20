@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>首页</title>
+    <link rel="stylesheet" href="style_1.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="./jquery.min.js"></script>
+    <script src="./popper.min.js"></script>
+    <script src="./bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
+    <script src="./bootstrap-4.6.0-dist/js/jquery.cookie.min.js"></script>
+</head>
+<body >
+   <div>
+       <span class="title">Art Store </span>
+       <span class="littleTitle">Where you find GENIUS and EXTROORDINARY</span>
+       <div class="nav">
+           <a class="atype1" href="lab2_4.html">注册</a>
+           <a class="atype1" href="lab2_3.html">登陆</a>
+           <a class="atype1" href="#">详情</a>
+           <a class="atype1" href="lab2_5.html">搜索</a>
+           <a class="atype1" href="lab2_6.html">收藏</a>
+           <a class="atype1" href="#">首页</a>
+       </div>
+   </div>
+   <div id="track"></div>
+   <hr>
+   <hr>
+   <div id="demo" class="carousel slide" data-ride="carousel">
+
+       <!-- 指示符 -->
+       <ul class="carousel-indicators">
+           <li data-target="#demo" data-slide-to="0" class="active"></li>
+           <li data-target="#demo" data-slide-to="1"></li>
+           <li data-target="#demo" data-slide-to="2"></li>
+       </ul>
+
+       <!-- 轮播图片 -->
+       <div class="carousel-inner miss_img">
+           
+       </div>
+
+       <!-- 左右切换按钮 -->
+       <a class="carousel-control-prev" href="#demo" data-slide="prev">
+           <span class="carousel-control-prev-icon"></span>
+       </a>
+       <a class="carousel-control-next" href="#demo" data-slide="next">
+           <span class="carousel-control-next-icon"></span>
+       </a>
+
+   </div>
+    <br/><hr>
+    <div id="container2">
+        <table>
+            <tr class="new_img">
+                <td class="new_img"></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Entry of Christ Into Brussels</td>
+                <td>Water Lilies</td>
+                <td>Edvard Munch</td>
+            </tr>
+            <tr>
+                <td>James Ensor</td>
+                <td>Claude Monet</td>
+                <td>Madonna</td>
+            </tr>
+            <tr style="color: #8b8b8b">
+                <td>
+                    <em>Christ\'s Entry Into Brussels</em> in 1889 (also known as Entry of Christ into Brussels) is an
+                    1888 painting by James Ensor. The painting is on permanent exhibition at the Getty Center in Los
+                    Angeles.', 1889, 'Expressionism', 253, 431, 400, 54, 1, NULL, '2016-03-17 17:32:57')
+                </td>
+                <td>
+                    Monet left much of his late work unfinished and released few paintings for sale, reporting that he
+                    was not yet satisfied and was still working on them \"with passion.\" This canvas is one of four
+                    water-lily pictures that, quite exceptionally, he did complete, sign, and sell in 1919.', 1919,
+                    'Impressionism', 101, 200, 250, 525, 1, NULL, '2016-05-17 05:24:59')
+                </td>
+                <td>
+                    <em>Madonna</em> is a painting by the Norwegian expressionist Edvard Munch. Munch painted five
+                    versions of the Madonna between 1894 and 1895, using oils on canvas. Although it is a highly
+                    unusual representation, nevertheless, this painting is of Mary, the mother of Jesus. True to
+                    the Norwegian cultural beliefs and way of life, the painting is a strong dose of conceivable
+                    realism.', 1895, 'Expressionism', 91, 70, 190, 662, 1, NULL, '2016-04-28 02:12:32'),
+                </td>
+            </tr>
+            <tr class="detail_img">
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+   <br/>
+<!--页脚   -->
+   <div id="footer">
+       <footer>
+           ArtStore.Produced and maintained by Achillessanger at 2018.4.1.All Rights Reserved
+       </footer>
+   </div>
+    <script type="text/javascript" src="track.js"></script>
+   <script type="text/javascript" src="练习2.js"></script>
+    <script type="text/javascript" src="top3_new3.js"></script>
+    <script>
+        $(() => {
+            let name = $.cookie('username');
+            if(name != undefined) {
+                $('.nav a:nth-child(1)').css('display','none')
+                $('.nav a:nth-child(2)').css('display','none')
+                $('.nav').append(`<a href='./lab2_6.html' class="atype1">${name}</a>`)
+                $('.nav').append(`<a href='javascript:;' class="atype1 logout">退出</a>`)
+            }
+
+            $('.logout').on('click', () => {
+                $.removeCookie('username', { path: '/' });
+                window.location.href = './lab2_3.html'
+            })
+
+        })
+    </script>
+</body>
+</html>

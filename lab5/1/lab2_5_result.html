@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>搜索结果</title>
+    <link rel="stylesheet" href="style_5.css">
+    <!-- 引入JQuery 文件 -->
+    <script src="./jquery.min.js"></script>
+</head>
+<body>
+    <body background="resources/img/黑色图片3.jpg">
+    <div id="container1">
+        <a href="lab2_6.html" class="atype1">收藏</a>
+        <a class="atype1" href="lab2_4.html">注册</a>
+        <a class="atype1" href="lab2_3.html">登陆</a>
+        <a class="atype1">详情</a>
+        <a class="atype1" href="lab2_1.html">首页</a>
+    </div>
+    <div id="track"></div>
+    <div id="container2">
+        <span id="span1">搜索</span>
+    </div>
+    <div id="container3">
+        <form action="./lab2_5_result.html">
+            <input type="text" class="input3" name="keywords">
+            <div>
+                <input type="submit" value="搜索" class="input2" onmouseover="this.style.backgroundPosition='center right '"
+                       onmouseout="this.style.backgroundPosition='top right'">
+            </div>
+            <div id="select_id">
+                <select class="select1" name="kind">
+                    <option value="title" selected>作品</option>
+                    <option value="artist">画家</option>
+                    <option value="genre" >流派</option>
+                </select>
+                <select class="select1" name="sort_method">
+                    <option value="timeReleased" selected>时间</option>
+                    <option value="view">热度</option>
+                </select>
+            </div>
+
+        </form>
+    </div>
+    <div id="container4">
+
+        <div class="ul"></div>
+    </div>
+
+    <!--分页-->
+    <div id="page_cut">
+        <span class="span2 s1">
+            <!--<a href="javascript:;" class="atype2 last">上一页</a>-->
+            <span class="span"></span >
+            <span class="span2 s2">
+                <!--<a href="javascript:;" class="atype2 next">下一页</a>-->
+            </span>
+        </span>
+    </div>
+
+    <script type="text/javascript" src="track.js"></script>
+    <script type="text/javascript" src="search_result.js"></script>
+</body>
+</html>

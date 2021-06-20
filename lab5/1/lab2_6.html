@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人收藏页</title>
+    <link rel="stylesheet" href="lab2_6.css">
+    <!-- 引入JQuery 文件 -->
+    <script src="./jquery.min.js"></script>
+    <script src="./bootstrap-4.6.0-dist/js/jquery.cookie.min.js"></script>
+</head>
+<body background="resources/img/黑色图片3.jpg">
+    <div id="container1">
+        <a href="lab2_5.html" class="atype1">搜索</a>
+        <a class="atype1" href="lab2_4.html">注册</a>
+        <a class="atype1" href="lab2_3.html">登陆</a>
+        <a class="atype1" href="lab2_2.html?id=36">详情</a>
+        <a class="atype1" href="lab2_1.html">首页</a>
+    </div>
+    <div id="track"></div>
+    <div id="container2">
+        <img src="resources/img/71.jpg" alt="个人头像" id="img1">
+        <p id="p1">用户名：</p>
+        <p id="p2">master</p>
+        <p id="p3">邮箱:</p>
+        <p id="p4">master@gmail.com</p>
+    </div>
+    <div id="container3">
+        <p id="p5">个人收藏</p>
+        <input type="text" class="input1">
+        <form action="#">
+            <input type="submit" value="搜索" class="input2" onmouseover="this.style.backgroundPosition='center right '"
+                   onmouseout="this.style.backgroundPosition='bottom right'">
+        </form>
+    </div>
+    <div id="container4">
+        <table>
+            <tr class="tr1">
+                <th>作品</th>
+                <th>作品名</th>
+                <th>作者</th>
+                <th>介绍</th>
+                <th>上传日期</th>
+            </tr>
+            <tbody class="miss_body">
+            </tbody>
+        </table>
+    </div>
+<script type="text/javascript" src="2_6.js"></script>
+    <script type="text/javascript" src="track.js"></script>
+<script type="text/javascript" src="wishlist_2_6.js"></script>
+<script>
+    $(() => {
+        let name = $.cookie('username');
+        if(name != undefined) {
+            $('#container1 a:nth-child(2)').remove()
+            $('#container1 a:nth-child(2)').remove()
+            $('#container1').append(`<a href='javascript:;' class="atype1 logout">退出</a>`)
+            $('#container1').append(`<a href='' class="atype1">${name}</a>`)
+            $('#p2').html(name)
+            $('#p4').html($.cookie('email'))
+        }
+
+        $('.logout').on('click', () => {
+            $.removeCookie('username', { path: '/' });
+            window.location.href = './lab2_3.html'
+        })
+
+    })
+</script>
+</body>
+</html>
